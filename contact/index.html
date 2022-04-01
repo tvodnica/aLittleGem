@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A little gem - your perfect rural retreat</title>
+    <link
+      rel="shortcut icon"
+      href="../MATERIJALI/alg-favicon.png"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="../CSS/header.css" />
+    <link rel="stylesheet" href="../CSS/contact.css" />
+    <link rel="stylesheet" href="../CSS/footer.css" />
+    <link rel="stylesheet" href="../CSS/backToTopButton.css" />
+    <link
+      rel="stylesheet"
+      href="../JS/lightbox2-2.11.3/dist/css/lightbox.min.css"
+    />
+
+    <script src="../JS/jqery.js"></script>
+    <script src="../JS/home.js"></script>
+    <script src="../JS/lightbox2-2.11.3/dist/js/lightbox.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div id="header-svi-apartmani">
+        <div class="apartman">
+          <a href="../home/"> Private cottage a little gem </a> 
+        </div>
+        <div class="apartman">
+          <a href="http://www.dubrovnikholidays.net/">
+            Quiet and relaxing seafront House Tereza
+          </a>
+        </div>
+        <div class="apartman">
+          <a href=""> Old city Top Spot apartments </a>
+        </div>
+      </div>
+      <div id="header-glavni">
+        <div class="header-icon" id="plus">
+          <a href="">
+            <img src="../MATERIJALI/plus-icon.svg" alt="Side menu" />
+          </a>
+        </div>
+        <div id="logo-area">
+          <a href="../home/">A little gem </a>
+        </div>
+        <div class="header-icon" id="hamburger">
+          <a href="">
+            <img src="../MATERIJALI/hamburger-icon.svg" alt="Main menu" />
+          </a>
+        </div>
+        <div id="navigacijska-lista">
+          <ul>
+            <li>
+              <a href="../home/">Home</a>
+            </li>
+            <li>
+              <a href="../about/">About</a>
+            </li>
+            <li>
+              <a href="../gallery/">Gallery</a>
+            </li>
+            <li>
+              <a href="../contact/">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div id="content">
+      <h1>Contact us</h1>
+      <div id="forma-i-adresa">
+        <form action="../JS/contact-form.php" method="POST">
+          <div id="inputi-svi">
+            <div id="inputi-osim-poruke">
+              <div class="label-i-input">
+                <div class="label">
+                  <label for="forma-ime">First name</label>
+                </div>
+                <div class="input">
+                  <input
+                    type="text"
+                    name="name"
+                    id="forma-ime"
+                    required
+                    placeholder="Your first name"
+                    autocomplete="given-name"
+                  />
+                </div>
+              </div>
+
+              <div class="label-i-input">
+                <div class="label">
+                  <label for="forma-prezime">Last name</label>
+                </div>
+                <div class="input">
+                  <input
+                    type="text"
+                    name="lastName"
+                    id="forma-prezime"
+                    required
+                    placeholder="Your last name"
+                    autocomplete="family-name"
+                  />
+                </div>
+              </div>
+
+              <div class="label-i-input">
+                <div class="label">
+                  <label for="forma-email">E-mail Address</label>
+                </div>
+                <div class="input">
+                  <input
+                    type="email"
+                    name="email"
+                    id="forma-email"
+                    required
+                    placeholder="Your e-mail address"
+                    autocomplete="email"
+                  />
+                </div>
+              </div>
+
+              <div class="label-i-input">
+                <div class="label">
+                  <label for="forma-country">Country</label>
+                </div>
+                <div class="input">
+                  <input
+                    type="text"
+                    name="Country"
+                    id="forma-country"
+                    required
+                    placeholder="Your country"
+                    autocomplete="country-name"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div id="input-poruka" class="label-i-input">
+              <div class="label">
+                <label for="forma-message">Message</label>
+              </div>
+              <div class="input">
+                <textarea
+                  name="Message"
+                  id="forma-message"
+                  cols="30"
+                  rows="19"
+                  required
+                  placeholder="Enter your message"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit">SEND</button>
+        </form>
+
+        <div id="adresa">
+          <strong>
+            A little gem <br />
+            Dubrovnik, Zaton bay <br />
+            <br />
+          </strong>
+          Mohovo 40, <br />
+          20235 Zaton Veliki, <br />
+          Dubrovnik, Croatia <br />
+          <br />
+          Telephone: <a href="tel:+385 91 529 2743"> +385 91 529 2743</a> <br />
+          E-mail:
+          <a href="mailto:info@dubrovnikholidays.net">
+            info@dubrovnikholidays.net
+          </a>
+        </div>
+      </div>
+      <div id="karta">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.5887734125413!2d18.038560780797813!3d42.69944179752423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDLCsDQxJzU3LjIiTiAxOMKwMDInMTMuMyJF!5e0!3m2!1shr!2shr!4v1614979734833!5m2!1shr!2shr"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+
+    <div class="slike" id="float-button-to-top">
+      <a href="#">
+        <img src="../MATERIJALI/arrow-up.png" alt="" />
+      </a>
+    </div>
+
+    <footer>
+      <div class="footer-box" id="footer-kuca">
+        <img src="../MATERIJALI/house-icon.png" alt="" />
+        <address>
+          <strong>
+            A little gem <br />
+            Dubrovnik, Zaton bay
+          </strong>
+        </address>
+      </div>
+
+      <div class="footer-box" id="footer-adresa">
+        <img src="../MATERIJALI/address-icon.png" alt="" />
+        <address>
+          Mohovo 40, <br />
+          20235 Zaton Veliki, <br />
+          Dubrovnik, Croatia
+        </address>
+      </div>
+
+      <div class="footer-box" id="footer-email">
+        <img src="../MATERIJALI/email-icon.png" alt="" />
+        <a href="mailto:info@dubrovnikholidays.net">
+          info@dubrovnikholidays.net
+        </a>
+      </div>
+      <div class="footer-box" id="footer-telefon">
+        <img src="../MATERIJALI/phone-icon.png" alt="" />
+        <a href="tel:+385 91 529 2743"> +385 91 529 2743</a>
+      </div>
+    </footer>
+  </body>
+</html>

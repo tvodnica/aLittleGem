@@ -1,0 +1,154 @@
+body {
+  margin-top: 100px;
+}
+
+h1 {
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  border-bottom: 5px solid rgb(0, 0, 255);
+  text-align: center;
+  margin: 125px 200px 0 200px;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+}
+
+#content {
+  align-items: center;
+  margin: 0 200px 0 200px;
+}
+
+#karta {
+  margin-bottom: 75px;
+}
+
+iframe {
+  width: 100%;
+}
+
+#forma-i-adresa {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: center;
+  align-self: center;
+  align-items: center;
+  margin-right: 50px;
+}
+
+#inputi-svi {
+  display: flex;
+  flex-direction: row;
+}
+.label-i-input {
+  padding: 0 20px 20px 0;
+}
+
+.label {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+#adresa {
+  font-size: 20px;
+  background-color: rgb(250, 250, 250);
+  padding: 50px;
+  margin-left: 25px;
+
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  margin-right: 20px;
+  font-size: 17px;
+}
+
+button {
+  background-color: rgb(0, 0, 255);
+  color: white;
+  padding: 10px 20px 10px 20px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+button:hover {
+  background-color: rgb(0, 0, 210);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#input-poruka{
+  margin-left: 40px;
+
+}
+
+textarea {
+  font-size: 15px;
+  padding: 5px;
+}
+
+
+/*------------------MEDIA QUERY------------------------*/
+
+@media only screen and (max-width: 1400px) {
+  
+  #content {
+    margin: 0 20px 0 20px;
+  }
+
+}
+@media only screen and (max-width: 1200px) {
+  
+  
+  #adresa {
+    margin: 0;
+    font-size: 17px;
+    padding: 39px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+  }
+  form {
+  
+    margin-right: 0;
+  }
+  
+
+}
+@media only screen and (max-width: 900px) {
+  h1 {
+    margin: 0;
+  }
+
+  #content {
+    margin: 0 20px 0 20px;
+  }
+
+  #forma-i-adresa {
+    grid-template-columns: 100%;
+  }
+  #inputi-svi {
+    flex-direction: column;
+  }
+  #adresa {
+    margin: 0;
+    font-size: 20px;
+  }
+  form {
+    margin: 0;
+    margin-bottom: 75px;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+  }
+  #input-poruka {
+    width: 70vw;
+  }
+}

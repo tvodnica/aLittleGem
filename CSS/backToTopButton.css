@@ -1,0 +1,37 @@
+html{
+    scroll-behavior: smooth;
+}
+
+#float-button-to-top {
+  background-color: blue;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  padding: 5px;
+  z-index: 9999;
+  opacity: 30%;
+  transition: 0.7s;
+  border: 1px solid white;
+}
+
+#float-button-to-top:hover {
+  opacity: 100%;
+  transition: 0.7s;
+  border: 1px solid white;
+}
+
+img {
+  width: 100%;
+}
+.slike {
+  max-width: 30px;
+  margin: auto;
+  opacity: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+  #float-button-to-top {
+    bottom: 20px;
+    right: 20px;
+  }
+}

@@ -1,0 +1,53 @@
+body {
+  margin-top: 125px;
+}
+
+#galerija {
+  margin: 100px;
+}
+
+.galerija-slike {
+  display: grid;
+  grid-template-columns: 14% 14% 14% 14% 14% 14% 14%;
+  padding-bottom: 50px;
+}
+.galerija-slika {
+  padding: 0 10px 10px 0;
+}
+img {
+  width: 100%;
+}
+
+
+@media only screen and (max-width:1400px) {
+    .galerija-slike {
+      grid-template-columns: 20% 20% 20% 20% 20%;
+    }
+    #galerija{
+        margin: 100px;
+    }
+  }
+@media only screen and (max-width:1200px) {
+    .galerija-slike {
+      grid-template-columns: 25% 25% 25% 25%;
+    }
+    #galerija{
+        margin: 50px;
+    }
+  }
+@media only screen and (max-width:900px) {
+    .galerija-slike {
+      grid-template-columns: 33% 33% 33%;
+    }
+    #galerija{
+        margin: 20px;
+    }
+  }
+@media only screen and (max-width:700px) {
+  .galerija-slike {
+    grid-template-columns: 50% 50%;
+  }
+  #galerija{
+      margin: 20px;
+  }
+}
